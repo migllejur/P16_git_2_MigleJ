@@ -5,13 +5,7 @@ def kaupk_aritmetika(*args, operacija="suma"):
         rezultatas = 1
         for nr in args:
             rezultatas *= nr
-    elif operacija == "dalyba":
-        rezultatas = args[0]
-        for nr in args[1:]:
-            if nr == 0:
-                return False
-            rezultatas /= nr
-    elif operacija == "suma":
+  elif operacija == "suma":
         rezultatas = sum(args)
     elif operacija == "atimtis":
         rezultatas = args[0]
